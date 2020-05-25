@@ -6,7 +6,7 @@ body {
 }
 
 .intro {
-    height: 100vh;
+    height: 95vh;
     background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
@@ -19,6 +19,8 @@ body {
     right: 0;
     width: 100%;
     height: 7vh;
+    background-color: rgba(0, 0, 0, 0.29);
+
 }
 
 .menu ul {
@@ -36,13 +38,12 @@ body {
     text-decoration: none;
     padding: 10px;
     display: block;
-    transition: text-shadow 1s;
+    transition: text-decoration 1s;
 
 }
 
-.menu ul li a:hover{
-    text-shadow: 10px 0px 10px white;
-
+.menu ul li a:hover {
+    border-bottom: 1px solid rgba(255)
 }
 
 .line {
@@ -81,3 +82,36 @@ body {
         border-right-color: transparent;
     }
 }
+
+/*----------------------------------------*/
+
+
+.about{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(100,100,100,.75);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2.2em 50vh 12em;
+    justify-items:center;
+}
+.sub-title{
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+
+.about figure {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 1.5em
+}
+
+
+.about figure img {
+    border: 1px solid transparent;
+    border-radius:50%;
+    height: 40vh;
+    justify-self: center;
+}
+
